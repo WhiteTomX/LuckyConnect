@@ -1,4 +1,4 @@
-package de.whitetom.randomcontactchooser
+package de.whitetom.luckyconnect
 
 import org.junit.Test
 
