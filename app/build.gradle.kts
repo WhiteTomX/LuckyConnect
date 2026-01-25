@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "de.whitetom.randomcontactchooser"
+    namespace = "de.whitetom.luckyconnect"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "de.whitetom.randomcontactchooser"
+        applicationId = "de.whitetom.luckyconnect"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -23,6 +23,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            isDebuggable = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -46,6 +47,10 @@ android {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
+    }
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
     }
 }
 
